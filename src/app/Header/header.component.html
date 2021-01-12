@@ -4,21 +4,21 @@
     </button>
     <a routerLink="/" class="navbar-brand">Recipe Book</a>
   </div>
-  <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+  <div class="navbar-collapse mb-2" [class.collapse]="collapsed" >
              <ul class="nav navbar-nav mt-2">
-                 <li ><a href="#"  (click)="onSelect('recipe')">Recipes</a></li>
-                 <li ><a href="#" (click)="onSelect('shopping-list')">Shoppng List</a></li>
+                 <li routerLinkActive='active'><a routerLink="/recipes">Recipes</a></li>
+                 <li routerLinkActive='active'><a routerLink="/shopping-list">Shoppng List</a></li>
              </ul>
              <ul class="nav navbar-nav navbar-right" >
                  <li class="dropdown"  appDropdown>
-                     <a href="#" class="dropdown-toggle" role="button"  >Manage <span class="caret"></span></a>
+                     <a  class="dropdown-toggle" role="button"  >Manage <span class="caret"></span></a>
                      <ul class="dropdown-menu">
-                         <li ><a href="#">Save data</a></li>
-                         <li ><a href="#">Fetch Data</a></li>
+                         <li ><a >Save data</a></li>
+                         <li ><a >Fetch Data</a></li>
                      </ul>
                  </li>
              </ul>
+             
     </div>
-   
-
+ <hr>
  

@@ -28,6 +28,9 @@ constructor(private shopService:ShoppingService){}
     getRecipes(){
         return this.recipes.slice();
     } 
+    getRecipe(id:number){
+     return this.recipes[id];
+  } 
   addIngredientToShop(ingredients:Ingredients[]){
       this.shopService.addIngredient(ingredients);
   }
