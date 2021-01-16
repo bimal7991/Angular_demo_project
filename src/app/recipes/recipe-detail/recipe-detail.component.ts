@@ -26,5 +26,9 @@ id:number;
   onEditRecipe(){
     this.router.navigate(['edit'],{relativeTo:this.route});
   }
+  onDeleteRecipe(){
+    this.recipeService.deleteRecipes(this.id);
+    this.router.navigate(['/recipes']);
+  }
 
 }
