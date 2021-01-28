@@ -4,10 +4,10 @@
             <div class="col-xs-12" *ngIf="isLoading">
                 <app-loader></app-loader>
             </div>
-           <div class="alert alert-danger" *ngIf="isError">
+           <!-- <div class="alert alert-danger" *ngIf="isError">
                {{isError}}
-           </div>
-
+           </div> -->
+           <app-alert [message]="isError" *ngIf="isError" (close)="onCloseBacdrop()"></app-alert>
 
             <form #authForm="ngForm"   (ngSubmit)="onSubmit(authForm)">
                 <div class="form-group">

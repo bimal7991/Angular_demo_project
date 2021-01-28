@@ -54,7 +54,9 @@ export class AuthComponent implements OnInit {
     })
     form.reset()
   }
-
+  onCloseBacdrop(){
+    this.isError=null;
+  }
 
 
 

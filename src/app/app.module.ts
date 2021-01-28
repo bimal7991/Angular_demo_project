@@ -21,6 +21,7 @@ import { RecipeService } from './recipes/recipe-service';
 import { AuthComponent } from './auth/auth.component';
 import { LoaderComponent } from './shared/loader/loader.component';
 import { AuthInterceptors } from './auth/auth-interceptors';
+import { AlertComponent } from './shared/alert/alert.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,9 @@ import { AuthInterceptors } from './auth/auth-interceptors';
    
     AuthComponent,
    
-    LoaderComponent
+    LoaderComponent,
+   
+    AlertComponent
   ],
   imports: [
     BrowserModule,
